@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-6"
+let bnbPackageVersion: Version = "1.8.0-7"
 
 let package = Package(
     name: "BNBHair",
@@ -12,10 +12,10 @@ let package = Package(
         .library(
             name: "BNBHair",
             targets: [
-                "BNBHair",
-                "BNBSdkCore",
-                "BNBEffectPlayer",
-                "BNBScripting"
+                "BNBHairBNBHairTarget",
+                "BNBHairBNBSdkCoreTarget",
+                "BNBHairBNBEffectPlayerTarget",
+                "BNBHairBNBScriptingTarget"
             ]
         ),
     ],
@@ -40,7 +40,7 @@ let package = Package(
             checksum: "2f2301f78a1a12bb5cda4234a4245fdb0b130b4d9f65b99f76af83a5ee29db2c"
         ),
         .target(
-            name: "BNBSdkCore",
+            name: "BNBHairBNBSdkCoreTarget",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -49,7 +49,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBEffectPlayer",
+            name: "BNBHairBNBEffectPlayerTarget",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -58,7 +58,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBScripting",
+            name: "BNBHairBNBScriptingTarget",
             dependencies: [
                 .product(
                     name: "BNBScripting",

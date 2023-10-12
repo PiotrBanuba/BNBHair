@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBHair",
             targets: [
                 "BNBHair",
-                "BNBHairBNBSdkCoreTarget",
-                "BNBHairBNBEffectPlayerTarget",
-                "BNBHairBNBScriptingTarget"
+                "BNBHairBNBSdkCore",
+                "BNBHairBNBEffectPlayer",
+                "BNBHairBNBScripting"
             ]
         ),
     ],
@@ -40,7 +40,7 @@ let package = Package(
             checksum: "2f2301f78a1a12bb5cda4234a4245fdb0b130b4d9f65b99f76af83a5ee29db2c"
         ),
         .target(
-            name: "BNBHairBNBSdkCoreTarget",
+            name: "BNBHairBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -49,7 +49,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHairBNBEffectPlayerTarget",
+            name: "BNBHairBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -58,7 +58,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHairBNBScriptingTarget",
+            name: "BNBHairBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",

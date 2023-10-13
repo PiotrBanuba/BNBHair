@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-13"
+let bnbPackageVersion: Version = "1.8.0-14"
 
 let package = Package(
     name: "BNBHair",
@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBHair",
             targets: [
                 "BNBHair_Target",
-                "BNBHair_BNBHair_Target",
-                "BNBHair_BNBHair_Target",
-                "BNBHair_BNBHair_Target"
+                "BNBHair_BNBSdkCore_Target",
+                "BNBHair_BNBEffectPlayer_Target",
+                "BNBHair_BNBScripting_Target"
             ]
         ),
     ],
